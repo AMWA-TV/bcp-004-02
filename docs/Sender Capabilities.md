@@ -133,7 +133,7 @@ A Controller MAY use this label to indicate to a user which Constraint Sets of a
 
 The metadata attribute `urn:x-nmos:cap:meta:preference` enables the Sender to indicate its preference between the listed Constraint Sets.
 
-A Controller MAY use Sender preference, for example, to assist the user in choosing between multiple Sender operating point.
+A Controller MAY use Sender preference, for example, to assist the user in choosing between multiple Sender operating points.
 
 The preference is indicated as an integer value in the range from -100 to 100 inclusive.
 
