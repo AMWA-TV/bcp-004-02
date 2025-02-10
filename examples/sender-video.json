@@ -1,0 +1,128 @@
+{
+    "description": "Example video sender",
+    "label": "Video Sender",
+    "manifest_href": "http://172.29.80.25/x-manufacturer/senders/4002d6b5-5775-4975-9859-5b330fcea288/stream.sdp",
+    "version": "1441724086:828491206",
+    "flow_id": "75bfddce-7142-4368-bb4a-8a82c837c6df",
+    "id": "4002d6b5-5775-4975-9859-5b330fcea288",
+    "transport": "urn:x-nmos:transport:rtp.mcast",
+    "interface_bindings": [
+        "eth0",
+        "eth1"
+    ],
+    "device_id": "3a98e804-9871-4699-ba31-d608309d8933",
+    "tags": {},
+    "subscription": {
+        "receiver_id": null,
+        "active": true
+    },
+    "caps": {
+        "constraint_sets": [
+            {
+                "urn:x-nmos:cap:meta:label": "1080i Format Group as per VSF TR-05:2018",
+                "urn:x-nmos:cap:format:frame_width": {
+                    "enum": [
+                        1920
+                    ]
+                },
+                "urn:x-nmos:cap:format:frame_height": {
+                    "enum": [
+                        1080
+                    ]
+                },
+                "urn:x-nmos:cap:format:interlace_mode": {
+                    "enum": [
+                        "interlaced_tff"
+                    ]
+                },
+                "urn:x-nmos:cap:format:grain_rate": {
+                    "enum": [
+                        {
+                            "numerator": 25,
+                            "denominator": 1
+                        },
+                        {
+                            "numerator": 30000,
+                            "denominator": 1001
+                        }
+                    ]
+                },
+                "urn:x-nmos:cap:format:color_sampling": {
+                    "enum": [
+                        "YCbCr-4:2:2"
+                    ]
+                },
+                "urn:x-nmos:cap:format:component_depth": {
+                    "enum": [
+                        10
+                    ]
+                },
+                "urn:x-nmos:cap:format:transfer_characteristic": {
+                    "enum": [
+                        "SDR"
+                    ]
+                },
+                "urn:x-nmos:cap:format:colorspace": {
+                    "enum": [
+                        "BT709"
+                    ]
+                }
+            },
+            {
+                "urn:x-nmos:cap:meta:label": "1080p Format Group as per VSF TR-05:2018",
+                "urn:x-nmos:cap:format:frame_width": {
+                    "enum": [
+                        1920
+                    ]
+                },
+                "urn:x-nmos:cap:format:frame_height": {
+                    "enum": [
+                        1080
+                    ]
+                },
+                "urn:x-nmos:cap:format:interlace_mode": {
+                    "enum": [
+                        "progressive"
+                    ]
+                },
+                "urn:x-nmos:cap:format:grain_rate": {
+                    "enum": [
+                        {
+                            "numerator": 24000,
+                            "denominator": 1001
+                        },
+                        {
+                            "numerator": 50,
+                            "denominator": 1
+                        },
+                        {
+                            "numerator": 60000,
+                            "denominator": 1001
+                        }
+                    ]
+                },
+                "urn:x-nmos:cap:format:color_sampling": {
+                    "enum": [
+                        "YCbCr-4:2:2"
+                    ]
+                },
+                "urn:x-nmos:cap:format:component_depth": {
+                    "enum": [
+                        10
+                    ]
+                },
+                "urn:x-nmos:cap:format:transfer_characteristic": {
+                    "enum": [
+                        "SDR"
+                    ]
+                },
+                "urn:x-nmos:cap:format:colorspace": {
+                    "enum": [
+                        "BT709"
+                    ]
+                }
+            }
+        ],
+        "version": "1605272395:492335100"
+    }
+}
