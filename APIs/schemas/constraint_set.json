@@ -23,10 +23,10 @@
     }
   },
   "patternProperties": {
-    "^urn:(x-nmos|x-[a-z]+):cap:(?!meta:)": {
+    "^urn:[^./]+:cap:(?!meta:)": {
       "$ref": "param_constraint.json"
     },
-    "^urn:x-[a-z]+:cap:meta:": {
+    "^urn:(?!x-nmos)[^./]+:cap:meta:": {
       "oneOf": [
           {
             "type": [ "boolean", "integer", "number", "string", "null" ]
