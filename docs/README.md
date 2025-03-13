@@ -1,2 +1,2 @@
-- [Receiver Capabilities](Receiver%20Capabilities.md)
-- [Examples](Examples.md)
+- [Sender Capabilities](Sender%20Capabilities.md)
+

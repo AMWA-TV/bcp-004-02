@@ -1,0 +1,60 @@
+{
+    "description": "Example audio sender",
+    "label": "Audio Sender",
+    "manifest_href": "http://172.29.80.25/x-manufacturer/senders/4002d6b5-5775-4975-9859-5b330fcea288/stream.sdp",
+    "version": "1441724086:828491206",
+    "flow_id": "75bfddce-7142-4368-bb4a-8a82c837c6df",
+    "id": "4002d6b5-5775-4975-9859-5b330fcea288",
+    "transport": "urn:x-nmos:transport:rtp.mcast",
+    "interface_bindings": [
+        "eth0",
+        "eth1"
+    ],
+    "device_id": "3a98e804-9871-4699-ba31-d608309d8933",
+    "tags": {},
+    "subscription": {
+        "receiver_id": null,
+        "active": true
+    },
+    "caps": {
+        "constraint_sets": [
+            {
+                "urn:x-nmos:cap:format:channel_count": {
+                    "maximum": 16
+                },
+                "urn:x-nmos:cap:format:sample_rate": {
+                    "enum": [
+                        {
+                            "numerator": 48000,
+                            "denominator": 1
+                        }
+                    ]
+                },
+                "urn:x-nmos:cap:transport:packet_time": {
+                    "enum": [
+                        0.125
+                    ]
+                }
+            },
+            {
+                "urn:x-nmos:cap:format:channel_count": {
+                    "maximum": 8
+                },
+                "urn:x-nmos:cap:format:sample_rate": {
+                    "enum": [
+                        {
+                            "numerator": 48000,
+                            "denominator": 1
+                        }
+                    ]
+                },
+                "urn:x-nmos:cap:transport:packet_time": {
+                    "enum": [
+                        1
+                    ]
+                }
+            }
+        ],
+        "version": "1605272395:492335100"
+    }
+}
