@@ -3,10 +3,10 @@ theme: jekyll-theme-primer
 spec_server: specs.amwa.tv
 
 # AMWA ID
-amwa_id: BCP-004-01
+amwa_id: BCP-004-02
 
 # Base name for site (typically lower case version of AMWA ID, or the repo name)
-baseurl: /bcp-004-01
+baseurl: /bcp-004-02
 
 # Which release or branch appears in header links and on the home page
 default_tree: branches/v1.0-dev
