@@ -162,7 +162,7 @@ The Sender advertises a list of Constraint Sets as a JSON array of these objects
 
 The `constraint_sets` as a whole is satisfied if **any of** the listed Constraint Sets are satisfied. When the list is empty, or none of the Constraint Sets are satisfied, the `constraint_sets` as a whole is thus not satisfied.
 
-Several worked examples are provided in the [Examples](../Examples) folder.
+Examples are provided for a [video Sender](../Examples/sender-video.json) and an [audio Sender](../Examples/sender-audio.json).
 
 ## Validating Parameter Constraints and Constraint Sets
 
