@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "repository": "AMWA-TV/bcp-004-02",
+  "documents": [
+    {
+      "title": "Examples",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/Examples/",
+      "text": "Examples Examples Examples - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content Examples",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "AMWA BCP-004-02: NMOS Sender Capabilities",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/Sender%20Capabilities/",
+      "text": "AMWA BCP-004-02: NMOS Sender Capabilities AMWA BCP-004-02: NMOS Sender Capabilities Use of Normative Language Defining Parameter Constraints Parameter Constraint Identifiers Parameter Constraint Types Parameter Constraint Target Instantiating Parameter Constraints Constraint Keywords Common Constraint Keywords String Constraint Keywords Integer and Number Constraint Keywords Boolean Constraint Keywords Rational Constraint Keywords Constraint Sets Constraint Set Metadata Listing Constraint Sets Validating Parameter Constraints and Constraint Sets Capabilities Version Behaviour: Senders Behaviour: Controllers AMWA BCP-004-02: NMOS Sender Capabilities - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content AMWA BCP-004-02: NMOS Sender Capabilities In IS-04 , a Sender resource expresses the capabilities of a Sender through attributes that identify constraints on streams that are compatible with the Sender. Such Sender can be constrained to operate at an operating point within the Sender Capabilities using the IS-11 API. The Sender caps object is provided as an extensible mechanism to define fine-grained capabilities. This specification defines a new constraint_sets attribute for the Sender caps object, its value is an array of alternatives; this constraint is satisfied when any of its enumerated Constraint Sets are satisfied. This specification defines a generic JSON syntax to express Constraint Sets made up of individual Parameter Constraints. The Constraint Set is satisfied if all of its Parameter Constraints are satisfied. The representation of individual Parameter Constraints resembles the mechanism defined by IS-05 to constrain Sender and Receiver transport parameters at the /constraints endpoints, which Nodes and Controllers may also support. This specification also defines a new version attribute to indicate when changes to the caps object took place. The constraints_set and version attributes are listed in the Capabilities parameter register in the NMOS Parameter Registers . Use of Normative Language The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in RFC 2119 . Defining Parameter Constraints A specification for each Parameter Constraint is strongly RECOMMENDED to be listed in the Capabilities register in the NMOS Parameter Registers . Each specification defines a unique identifier, the constraint type, and the target parameter, as follows. Parameter Constraint Identifiers Each Parameter Constraint is given a unique identifier - a URN. Parameter Constraints defined by the AMWA have the form: urn:x-nmos:cap:<category>:<constraint> Two <category> names are initially defined, format for media-related constraints, and transport for transport-related constraints. For example, urn:x-nmos:cap:format:grain_rate is a Parameter Constraint relating to the Grain rate of the stream, for example by targeting the grain_rate attribute of an IS-04 Flow. (The concept of Grains is defined in the JT-NM Reference Architecture .) The <category> name meta is reserved for metadata related to Constraint Sets . These attributes are not constraints themselves. Manufacturers MAY use their own namespaces to indicate Parameter Constraints which are not currently defined within the NMOS namespace ( urn:x-nmos:cap: ). Parameter Constraint Types The specification defines the JSON value type to which the constraint relates, which MUST be one of: * string * integer * number * boolean * rational * as per IS-04, a JSON object with an integer numerator and optional integer denominator (default: 1) The type of the constraint defines which Constraint Keywords are allowed when the Parameter Constraint is instantiated. Parameter Constraint Target The specification defines the target parameter against which the constraint is to be evaluated, for example, the specific IS-04 Flow attribute or SDP format-specific parameter. Especially in the case of parameters carried in non-JSON formats, such as a transport file, the specification MUST also describe how to map the parameter value to one of the supported JSON types . Instantiating Parameter Constraints The Sender expresses its capabilities with respect to a particular Parameter Constraint by including the constraint's unique identifier as an attribute in a Constraint Set with an object value, the attributes of which depend on the specified type . For example: \"urn:x-nmos:cap:format:sample_depth\" : { \"enum\" : [ 24 , 20 , 16 ] } Constraint Keywords Each Parameter Constraint is instantiated as an object with attributes that are type-specific Constraint Keywords defining how the parameter is constrained. The Parameter Constraint is satisfied if all of the constraints expressed by the Constraint Keywords are satisfied. This implies that if any of the constraints expressed by the Constraint Keywords are not satisfied, the Parameter Constraint is not satisfied. Equally, when there are no Constraint Keywords, the Parameter Constraint thus explicitly indicates that the target parameter is unconstrained. Note that in some cases, the target parameter will allow future addition of new values, for example by inclusion in the Flow Attributes register in the NMOS Parameter Registers. It could therefore be better to explicitly constrain the target parameter to all supported values, if new values could cause an issue. Common Constraint Keywords The following attributes are allowed for all constraint types: * enum as an array value with one or more elements of the specified type String Constraint Keywords Nothing additional Integer and Number Constraint Keywords The following attributes are additionally allowed for integer and number constraints: minimum , inclusive minimum, an integer or number as appropriate maximum , inclusive maximum, an integer or number as appropriate Boolean Constraint Keywords Nothing additional Rational Constraint Keywords The following ",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "Examples",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/examples/",
+      "text": "Examples Examples Examples - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content Examples sender-audio.json sender-video.json",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "sender-audio.json",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/examples/sender-audio/",
+      "text": "sender-audio.json sender-audio.json sender-audio.json - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content sender-audio.json View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "sender-video.json",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/examples/sender-video/",
+      "text": "sender-video.json sender-video.json sender-video.json - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content sender-video.json View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "README",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/images/",
+      "text": "README README README - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content README This directory is for images used in documentation",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "AMWA BCP-004-02: NMOS Sender Capabilities",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/",
+      "text": "AMWA BCP-004-02: NMOS Sender Capabilities AMWA BCP-004-02: NMOS Sender Capabilities What does it do? Why does it matter? How does it work? Getting started AMWA BCP-004-02: NMOS Sender Capabilities - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content AMWA BCP-004-02: NMOS Sender Capabilities What does it do? Allows an IS-04 Sender to express parametric constraints on the types of streams that it is capable of producing Why does it matter? Controllers need to know whether a Receiver is capable of handling the streams a Sender is capable of producing before connecting the two Controllers need to know whether a Sender is capable of handling specific stream parameters before applying IS-11 active constraints How does it work? Establishes an open Capabilities register in the NMOS Parameter Registers that lists specifications for parametric constraints (such as width, height, frame rate, number of channels, etc.) Defines how a Sender instantiates these Parameter Constraints to make up a list of acceptable Constraint Sets, within the IS-04 caps attribute Getting started There is more information about the NMOS Specifications and their GitHub repos at https://specs.amwa.tv/nmos .",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "constraint_set",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/constraint_set/",
+      "text": "constraint_set constraint_set constraint_set - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content constraint_set With refs Resolved View: Folding Raw Expand all Collapse all View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "constraint_sets",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/constraint_sets/",
+      "text": "constraint_sets constraint_sets constraint_sets - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content constraint_sets With refs Resolved View: Folding Raw Expand all Collapse all View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "JSON Schemas",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/",
+      "text": "JSON Schemas JSON Schemas JSON Schemas - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content JSON Schemas constraint_set constraint_sets param_constraint param_constraint_boolean param_constraint_integer param_constraint_number param_constraint_rational param_constraint_string sender_constraint_sets",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "param_constraint",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/param_constraint/",
+      "text": "param_constraint param_constraint param_constraint - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content param_constraint With refs Resolved View: Folding Raw Expand all Collapse all View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "param_constraint_boolean",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/param_constraint_boolean/",
+      "text": "param_constraint_boolean param_constraint_boolean param_constraint_boolean - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content param_constraint_boolean With refs Resolved View: Folding Raw Expand all Collapse all View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "param_constraint_integer",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/param_constraint_integer/",
+      "text": "param_constraint_integer param_constraint_integer param_constraint_integer - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content param_constraint_integer With refs Resolved View: Folding Raw Expand all Collapse all View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "param_constraint_number",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/param_constraint_number/",
+      "text": "param_constraint_number param_constraint_number param_constraint_number - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content param_constraint_number With refs Resolved View: Folding Raw Expand all Collapse all View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "param_constraint_rational",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/param_constraint_rational/",
+      "text": "param_constraint_rational param_constraint_rational param_constraint_rational - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content param_constraint_rational With refs Resolved View: Folding Raw Expand all Collapse all View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "param_constraint_string",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/param_constraint_string/",
+      "text": "param_constraint_string param_constraint_string param_constraint_string - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content param_constraint_string With refs Resolved View: Folding Raw Expand all Collapse all View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    },
+    {
+      "title": "sender_constraint_sets",
+      "url": "https://specs.amwa.tv/new/bcp-004-02/latest/schemas/sender_constraint_sets/",
+      "text": "sender_constraint_sets sender_constraint_sets sender_constraint_sets - AMWA BCP-004-02: NMOS Sender Capabilities Skip to content sender_constraint_sets With refs Resolved View: Folding Raw Expand all Collapse all View: Folding Raw Expand all Collapse all",
+      "repository": "AMWA-TV/bcp-004-02"
+    }
+  ]
+}
