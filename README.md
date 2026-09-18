@@ -1,7 +1,8 @@
 # AMWA BCP-004-02: NMOS Sender Capabilities
 
 [![Lint Status](https://github.com/AMWA-TV/bcp-004-02/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/bcp-004-02/actions?query=workflow%3ALint)
-[![Render Status](https://github.com/AMWA-TV/bcp-004-02/workflows/Render/badge.svg)](https://github.com/AMWA-TV/bcp-004-02/actions?query=workflow%3ARender)
+[![Zensical Render Status](https://github.com/AMWA-TV/bcp-004-02/actions/workflows/docs.yml/badge.svg)](https://github.com/AMWA-TV/bcp-004-02/actions/workflows/docs.yml)
+[![Legacy Render Status](https://github.com/AMWA-TV/bcp-004-02/workflows/Render/badge.svg)](https://github.com/AMWA-TV/bcp-004-02/actions?query=workflow%3ARender)
 
 <!-- INTRO-START -->
 
