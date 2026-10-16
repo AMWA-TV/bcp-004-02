@@ -1,48 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/Sender%20Capabilities/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/404/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/Examples/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/constraint_set/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/Sender%20Capabilities/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/constraint_sets/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/examples/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/param_constraint/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/examples/sender-audio/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/param_constraint_boolean/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/examples/sender-video/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/param_constraint_integer/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/images/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/param_constraint_number/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/param_constraint_rational/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/constraint_set/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/param_constraint_string/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/constraint_sets/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/schemas/sender_constraint_sets/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/param_constraint/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/examples/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/param_constraint_boolean/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/examples/sender-audio/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/param_constraint_integer/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/bcp-004-02/v1.0.0/examples/sender-video/</loc>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/param_constraint_number/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/param_constraint_rational/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/param_constraint_string/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/bcp-004-02/v1.0.0/v1.0.0/schemas/sender_constraint_sets/</loc>
       </url>
 </urlset>
